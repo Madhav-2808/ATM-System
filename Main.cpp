@@ -13,6 +13,10 @@ class ATM{                	    // class ATM declaration
 	
 	
 	public:	                      // member functions defined with public access modifier
+	
+	// setData function is setting the Data into the private member variables
+	void setData(){
+	}
 	//getAccountNo function is returning the user's account no.
 	long int getAccountNo(){
 		return Acc_No;
