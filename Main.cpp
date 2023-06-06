@@ -13,7 +13,18 @@ class ATM{                	    // class ATM declaration
 	
 	
 	public:	                      // member functions defined with public access modifier
-
+	//getAccountNo function is returning the user's account no.
+	long int getAccountNo(){
+		return Acc_No;
+	}
 	
+	//getName function is returning the user's Name
+	string getName(){
+		return Name;
+	}
 
+	//getPIN function is returning the user's PIN
+	int getPIN(){
+		return PIN;
+	}
 };
