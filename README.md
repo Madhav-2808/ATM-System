@@ -4,11 +4,12 @@ It is an ATM-System program that function simple excecution with the help of C++
 
 Showing its OOP 's featues 
 
-Encapsulation 
-Polymorphism
-Inheritance 
+1. Encapsulation 
+2. Polymorphism
+3. Inheritance 
 
 etc.....
+still updating...
 
 
 
