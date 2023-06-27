@@ -34,6 +34,44 @@ class ATM{                	    // class ATM declaration
 	int getPIN(){
 		return PIN;
 	}
+	//getBalance is returning the user's Bank Balance
+	double getBalance(){
+		return balance;
+	}
+
+	//getMobileNo is returning the user's Mobile No.
+	string getMobileNo(){
+		return mobile_No;
+	}
+
+	//setMobile function is Updating the user mobile no
+	void setMobile(string mob_prev, string mob_new){
+		if (mob_prev == mobile_No){						// it will check old Mobile no
+			mobile_No = mob_new;						// and Update with new, if old matches
+			cout << endl << "Sucessfully Updated Mobile no.";
+			_getch();				//getch is to hold the screen ( untill user press any key )																			
+		}
+
+		else{							// Does not update if old mobile no. does not matches
+			cout << endl << "Incorrect !!! Old Mobile no";
+			_getch();			  //getch is to hold the screen ( untill user press any key )
+		}
+	}
+
+	//cashWithDraw function is used to withdraw money from ATM
+	void cashWithDraw(int amount_a){
+		if (amount_a > 0 && amount_a < balance){		// check entered amount validity
+			balance -= amount_a;		// balance = balance - amount_a
+			cout << endl << "Please Collect Your Cash";
+			cout << endl << "Available Balance :" << balance;
+			_getch();				//getch is to hold the screen(untill user press any key )
+		}
+
+		else{
+			cout << endl << "Invalid Input or Insufficient Balance";
+			_getch();				//getch is to hold the screen ( untill user press any key )
+		}
+	}
 };
 
 /* Mini Project - ATM
@@ -42,58 +80,6 @@ class ATM{                	    // class ATM declaration
    -> User Details
    -> Update Mobile No.
 */
-
-
-	//getBalance is returning the user's Bank Balance
-	double getBalance()
-	{
-		return balance;
-	}
-
-	//getMobileNo is returning the user's Mobile No.
-	string getMobileNo()
-	{
-		return mobile_No;
-	}
-
-	//setMobile function is Updating the user mobile no
-	void setMobile(string mob_prev, string mob_new)		
-	{
-		if (mob_prev == mobile_No)						// it will check old Mobile no
-		{
-			mobile_No = mob_new;						// and Update with new, if old matches
-			cout << endl << "Sucessfully Updated Mobile no.";
-			_getch();				//getch is to hold the screen ( untill user press any key )																			
-		}
-
-		else							// Does not update if old mobile no. does not matches
-		{
-			cout << endl << "Incorrect !!! Old Mobile no";
-			_getch();			  //getch is to hold the screen ( untill user press any key )
-		}
-	}
-
-	//cashWithDraw function is used to withdraw money from ATM
-	void cashWithDraw(int amount_a)
-	{
-		if (amount_a > 0 && amount_a < balance)		// check entered amount validity
-		{
-			balance -= amount_a;		// balance = balance - amount_a
-			cout << endl << "Please Collect Your Cash";
-			cout << endl << "Available Balance :" << balance;
-			_getch();				//getch is to hold the screen(untill user press any key )
-		}
-
-		else
-		{
-			cout << endl << "Invalid Input or Insufficient Balance";
-			_getch();				//getch is to hold the screen ( untill user press any key )
-		}
-	}
-
-};
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////
 int main(){
 	int choice = 0, enterPIN;		//enterPIN and enterAccountNo. ---> user authentication
@@ -107,8 +93,7 @@ int main(){
 	user1.setData(1234567, "Tim", 1111, 45000.90, "9087654321");
 
 
-	do
-	{
+	do{
 		system("cls");
 
 		cout << endl << "****Welcome to ATM*****" << endl;
@@ -121,10 +106,8 @@ int main(){
 
 
 		// check whether enter values matches with user details
-		if ((enterAccountNo == user1.getAccountNo()) && (enterPIN == user1.getPIN()))
-		{
-			do
-			{
+		if ((enterAccountNo == user1.getAccountNo()) && (enterPIN == user1.getPIN())){
+			do{
 				int amount = 0;
 				string oldMobileNo, newMobileNo;
 
@@ -139,8 +122,7 @@ int main(){
 				cout << endl << "5. Exit" << endl;
 				cin >> choice;						// taking user choice
 
-				switch (choice)						// switch condition
-				{
+				switch (choice){					// switch condition
 				case 1:								// if user presses 1 
 					cout << endl << "Your Bank balance is :" << user1.getBalance(); 
 													// getBalance is ... printing the users									bank balance
@@ -188,8 +170,7 @@ int main(){
 			} while (1);				// MENU	   // condition will always TRUE and loop is										capable of running infinite times
 		}
 
-		else
-		{
+		else{
 			cout << endl << "User Details are Invalid !!! ";
 			_getch();
 		}
