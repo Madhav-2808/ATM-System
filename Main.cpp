@@ -1,6 +1,4 @@
-#include<conio.h>
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
 using namespace std;
 
 class ATM{                	    // class ATM declaration
@@ -32,10 +30,6 @@ class ATM{                	    // class ATM declaration
 		return PIN;
 	}
 };
-#include<conio.h>
-#include<iostream>
-#include<string>
-using namespace std;
 
 /* Mini Project - ATM
    -> Check Balance
