@@ -4,7 +4,7 @@ using namespace std;
 class ATM{                	    // class ATM declaration
 	private:		    // member varibles defined with private access modifier
 	long int Acc_No;
-  	string Mobile_No;			//
+  	string Mobile_No;	
 	string Name;
 	int PIN;
 	double Balance;
