@@ -111,8 +111,7 @@ int main(){
 				int amount = 0;
 				string oldMobileNo, newMobileNo;
 
-				system("cls");
-				// user Interface
+				system("cls");					// user Interface
 				cout << endl << "**** Welcome to ATM *****" << endl;
 				cout << endl << "Select Options ";
 				cout << endl << "1. Check Balance";
