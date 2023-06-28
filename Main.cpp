@@ -147,7 +147,6 @@ int main(){
 					_getch();
 					break;
 
-
 				case 4:								  
 					cout << endl << "Enter Old Mobile No. ";
 					cin >> oldMobileNo;							// take old mobile no
