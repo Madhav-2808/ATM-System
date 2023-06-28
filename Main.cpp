@@ -167,7 +167,7 @@ int main(){
 					cout << endl << "Enter Valid Data !!!";
 				} 
 
-			} while (1);				// MENU	   // condition will always TRUE and loop is										capable of running infinite times
+			} while (1);														capable of running infinite times
 		}
 
 		else{
