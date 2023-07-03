@@ -9,7 +9,4 @@ Showing its OOP 's featues
 3. Inheritance 
 
 etc.....
-still updating...
-
-
 
