@@ -6,6 +6,4 @@ Showing its OOP 's featues
 
 1. Encapsulation 
 2. Polymorphism
-3. Inheritance 
-
-cc 
+3. Inheritance  
