@@ -2,8 +2,7 @@
 
 It is an ATM-System program that function simple excecution with the help of C++ programming language
 
-OOP 's featues 
-  
+OOP 's featues ::
 1. Encapsulation 
 2. Polymorphism
 3. Inheritance  
