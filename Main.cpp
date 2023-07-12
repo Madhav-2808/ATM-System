@@ -79,7 +79,7 @@ class ATM{                	    // class ATM declaration
    -> Cash withdraw
    -> User Details
    -> Update Mobile No.
-*/
+*
 /////////////////////////////////////////////////////////////////////////////////////////////
 int main(){
 	int choice = 0, enterPIN;		//enterPIN and enterAccountNo. ---> user authentication
