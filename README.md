@@ -4,7 +4,7 @@ It is an ATM-System program that function simple excecution with the help of C++
 
 OOP 's featues ::
 1. Object
-2. class
+2. Class
 3. Encapsulation 
 4. Polymorphism
 5. Inheritance
