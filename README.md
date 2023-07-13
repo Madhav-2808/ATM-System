@@ -4,10 +4,11 @@ It is an ATM-System program that function simple excecution with the help of C++
 
 OOP 's featues ::
 1. Object
-2. Encapsulation 
-3. Polymorphism
-4. Inheritance
-5. Data Abstraction
-6. Constructor
-7. Overloading
-8. Overriding
+2. class
+3. Encapsulation 
+4. Polymorphism
+5. Inheritance
+6. Data Abstraction
+7. Constructor
+8. Overloading
+9. Overriding
